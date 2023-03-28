@@ -55,7 +55,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: ENABLE_TRACING
-          value: "true"
+          value: "false"
         - name: SCHEME
           value: "http"
          # Valid levels are debug, info, warning, error, critical. If no valid level is set, gunicorn will default to info.
@@ -68,8 +68,8 @@ spec:
         # - name: BANK_NAME
         #   value: ""
         # Customize the cluster name if it cannot be retrieved from the metadata server
-        #- name: CLUSTER_NAME
-        #  value: "my-cluster"
+        - name: CLUSTER_NAME
+          value: "mycluster-fra02-b3c.4x16"
         - name: DEFAULT_USERNAME
           valueFrom:
             configMapKeyRef:
